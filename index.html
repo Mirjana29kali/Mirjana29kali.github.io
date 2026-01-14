@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartPro Inzenjering doo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 80px 10%;
+            position: relative;
+        }
+
+        h1, h2, h3 {
+            color: #f9fafb;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #cbd5e1;
+        }
+
+        /* Polygonal background */
+        .polygon {
+            background: linear-gradient(135deg, #1e293b 25%, #0f172a 25%, #0f172a 50%, #1e293b 50%, #1e293b 75%, #0f172a 75%, #0f172a);
+            background-size: 40px 40px;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 54px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background: #38bdf8;
+            color: #020617;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+        }
+
+        /* Two columns */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Cards */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            background: #020617;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #1e293b;
+        }
+
+        /* Contact full screen */
+        .contact {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+            font-size: 17px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #020617;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 900px) {
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 1. Главный экран -->
+<section class="hero polygon">
+    <div class="hero-content">
+        <h1>SmartPro Inzenjering doo</h1>
+        <p>
+            Konsultantska kompanija fokusirana na unapređenje poslovnog upravljanja,
+            strateško savetovanje i pouzdanu IT podršku. Pomažemo organizacijama da
+            optimizuju procese, donose kvalitetne odluke i stabilno rastu u digitalnom okruženju.
+        </p>
+        <a href="#kontakt" class="btn">Kontakt</a>
+    </div>
+</section>
+
+<!-- 2. Про нас -->
+<section>
+    <div class="grid-2">
+        <div>
+            <h2>Ko smo mi</h2>
+            <p>
+                SmartPro Inzenjering doo je nezavisna konsultantska firma sa sedištem u Beogradu,
+                specijalizovana za management consulting, poslovno savetovanje i IT podršku.
+                Radimo sa malim i srednjim preduzećima, kao i sa rastućim organizacijama koje žele
+                jasnu strukturu, efikasnije procese i pouzdanu tehnološku osnovu.
+            </p>
+            <p>
+                Naš pristup se zasniva na razumevanju realnih izazova klijenata, analizi postojećeg stanja
+                i implementaciji praktičnih, merljivih rešenja. Ne nudimo generičke savete, već
+                konkretne korake prilagođene svakom poslovanju.
+            </p>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1496065187959-7f07b8353c55?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D" alt="Technology">
+        </div>
+    </div>
+</section>
+
+<!-- 3. Сервисы -->
+<section class="polygon">
+    <h2>Naše ključne usluge</h2>
+    <div class="grid-3">
+        <div class="card">
+            <h3>Management Consulting</h3>
+            <p>
+                Pomažemo menadžmentu u definisanju ciljeva, strukture upravljanja i odgovornosti.
+                Fokusirani smo na optimizaciju operativnih i upravljačkih procesa.
+                Rezultat je jasnija organizacija i bolja kontrola poslovanja.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Business Consulting</h3>
+            <p>
+                Analiziramo poslovne modele, tokove rada i tržišnu poziciju kompanije.
+                Predlažemo konkretna poboljšanja u planiranju, finansijama i razvoju.
+                Naš cilj je održiv rast i povećanje efikasnosti.
+            </p>
+        </div>
+        <div class="card">
+            <h3>IT Support & Advisory</h3>
+            <p>
+                Pružamo tehničku podršku i savetovanje u oblasti IT infrastrukture i sistema.
+                Pomažemo u izboru, implementaciji i održavanju IT rešenja.
+                IT posmatramo kao alat za stabilno i bezbedno poslovanje.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. Преимущества -->
+<section>
+    <h2>Zašto klijenti biraju nas</h2>
+    <div class="grid-3">
+        <div class="card">
+            <h3>Praktičan pristup</h3>
+            <p>
+                Fokusirani smo na realna rešenja koja se mogu odmah primeniti u praksi,
+                bez nepotrebne teorije i komplikacija.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Razumevanje biznisa</h3>
+            <p>
+                Ne posmatramo probleme izolovano, već u kontekstu celokupnog poslovanja
+                i dugoročnih ciljeva klijenta.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Pouzdano partnerstvo</h3>
+            <p>
+                Gradimo dugoročne odnose zasnovane na poverenju, transparentnosti
+                i jasnoj komunikaciji.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. Процесс -->
+<section class="polygon">
+    <h2>Kako izgleda naš proces rada</h2>
+    <div class="grid-3">
+        <div class="card">
+            <h3>1. Analiza i razumevanje</h3>
+            <p>
+                Upoznajemo se sa vašim poslovanjem, izazovima i ciljevima.
+                Prikupljamo relevantne informacije i sagledavamo trenutno stanje.
+            </p>
+        </div>
+        <div class="card">
+            <h3>2. Predlog rešenja</h3>
+            <p>
+                Kreiramo konkretan plan sa jasnim preporukama, prioritetima
+                i realnim rokovima implementacije.
+            </p>
+        </div>
+        <div class="card">
+            <h3>3. Implementacija i podrška</h3>
+            <p>
+                Pomažemo u sprovođenju dogovorenih rešenja i ostajemo dostupni
+                za dodatnu podršku i optimizaciju.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 6. Контакты -->
+<section id="kontakt" class="contact">
+    <div class="grid-2">
+        <div class="contact-info">
+            <h2>Kontaktirajte nas</h2>
+            <p>
+                Ukoliko želite da unapredite svoje poslovanje ili vam je potrebna
+                stručna konsultacija, slobodno nam se obratite putem e-pošte.
+            </p>
+            <p>
+                Rado ćemo analizirati vašu situaciju i predložiti sledeće korake
+                ka stabilnijem i efikasnijem poslovanju.
+            </p>
+            <p><strong>Email:</strong> inbox@smartproinzenjering.pro</p>
+            <p><strong>Adresa:</strong> Bregalnicka 22, Beograd 11050, PAK 149405</p>
+        </div>
+        <div>
+            <img src="https://media.istockphoto.com/id/2190572397/photo/modern-collaborative-office-space-with-diverse-professionals-working-in-a-co-working.webp?a=1&b=1&s=612x612&w=0&k=20&c=VWl8bQxA7uEjYV1ZKyrs3lT-gs0PCiOGiivrRF1Mwy4=" alt="Office">
+        </div>
+    </div>
+</section>
+
+<!-- 8. Футер -->
+<footer>
+    © 2026 SmartPro Inzenjering doo. Sva prava zadržana.
+</footer>
+
+</body>
+</html>
